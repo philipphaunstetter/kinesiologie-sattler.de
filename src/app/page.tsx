@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 w-full">
           {/* Tabs */}
-          <div className="bg-white overflow-x-auto px-6 py-[10px] w-full">
+          <div className="bg-white overflow-x-auto px-6 py-[10px] w-full scrollbar-hide">
             <div className="flex gap-5 items-center whitespace-nowrap">
               <div className="flex flex-col gap-[2px]">
                 <p className="font-medium text-sm leading-[21px] tracking-[0.07px] text-[#437c6d] text-center">
