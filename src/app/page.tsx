@@ -200,7 +200,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="font-normal text-xs leading-4 tracking-[0.18px] text-[#64748b] text-center w-full">
+        <p className="font-normal text-sm leading-5 tracking-[0.18px] text-[#64748b] text-center w-full">
           <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an. Diese Dienstleistungen ersetzen keine medizinische oder therapeutische Behandlung. Bei gesundheitlichen Anliegen konsultieren Sie bitte qualifizierte Fachkräfte.
         </p>
       </section>
@@ -255,7 +255,7 @@ export default function Home() {
             <p className="flex-1">Datenschutz</p>
           </div>
         </div>
-        <p className="font-normal text-sm leading-4 tracking-[0.07px] text-[#64748b] text-justify w-full">
+        <p className="font-normal text-sm leading-5 tracking-[0.07px] text-[#64748b] text-justify w-full">
           <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler ist keine medizinische Fachkraft und ersetzt keine ärztliche oder heilpraktische Behandlung. Bei gesundheitlichen Anliegen wird dringend geraten, sich an qualifizierte Schulmediziner, Heilpraktiker oder Psychotherapeuten zu wenden. Es ist wichtig, bestehende Behandlungen nicht zu unterbrechen.<br /><br />
           Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an und unterliegt nicht der Psychotherapiegesetzgebung. Beachten Sie, dass diese Dienstleistungen keine medizinische oder therapeutische Behandlung ersetzen und in Absprache mit Fachleuten durchgeführt werden sollten.
         </p>
