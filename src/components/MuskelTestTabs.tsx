@@ -109,8 +109,8 @@ export function MuskelTestTabs() {
   return (
     <div className="flex flex-col gap-4 w-full">
       {/* Tabs */}
-      <div ref={tabsRef} className="bg-white overflow-x-auto px-6 py-[10px] w-full scrollbar-hide">
-        <div className="flex gap-5 items-center whitespace-nowrap">
+      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 pr-6 py-[10px] w-full scrollbar-hide">
+        <div className="flex gap-5 items-center whitespace-nowrap pr-6">
           {tabsData.map((tab) => (
             <button
               key={tab.id}
