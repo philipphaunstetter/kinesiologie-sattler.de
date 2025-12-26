@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button';
 import { FeatureCard } from '@/components/FeatureCard';
+import { MuskelTestTabs } from '@/components/MuskelTestTabs';
 import { ScaleIcon, BoneIcon, SofaIcon, LaughIcon, SproutIcon, CheckIcon } from '@/components/Icons';
 
 export default function Home() {
@@ -70,46 +71,7 @@ export default function Home() {
             Tauchen Sie ein in die faszinierende Welt des Muskeltests und erleben Sie die transformative Wirkung der visionären Kinesiologie nach Kinninger®
           </p>
         </div>
-        <div className="flex flex-col gap-4 w-full">
-          {/* Tabs */}
-          <div className="bg-white overflow-x-auto px-6 py-[10px] w-full scrollbar-hide">
-            <div className="flex gap-5 items-center whitespace-nowrap">
-              <div className="flex flex-col gap-[2px]">
-                <p className="font-medium text-sm leading-[21px] tracking-[0.07px] text-[#437c6d] text-center">
-                  Muskeltest-Techniken
-                </p>
-                <div className="h-[1px] bg-[#437c6d] w-full" />
-              </div>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b] text-center">
-                Energiefluß-Balance
-              </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b] text-center">
-                Strukturelle Anpassung
-              </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b] text-center">
-                Emotionaler Stressabbau
-              </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b] text-center">
-                Selbstentwicklung & Zielsetzung
-              </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b] text-center">
-                Mind-Body-Integration
-              </p>
-            </div>
-          </div>
-          {/* Content */}
-          <div className="px-6">
-            <div className="bg-[rgba(67,124,109,0.05)] flex flex-col gap-12 p-4 rounded-lg">
-              <p className="font-semibold text-base leading-6 tracking-0 text-[#437c6d]">
-                Harmonie von Innen:<br />
-                Balance des Energieflusses
-              </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
-                Durch das harmonische Ausbalancieren des Energieflusses wird das Gleichgewicht von Körper und Geist gefördert. Erleben Sie, wie Kinesiologie Ihnen hilft, in Ihre innere Mitte zurückzufinden.
-              </p>
-            </div>
-          </div>
-        </div>
+        <MuskelTestTabs />
       </section>
 
       {/* CTA Section */}
