@@ -117,7 +117,7 @@ export function MuskelTestTabs() {
               onClick={() => setActiveTab(tab.id)}
               className="flex flex-col gap-[2px] cursor-pointer"
             >
-              <p className={`text-sm leading-[21px] tracking-[0.07px] text-center transition-colors ${
+              <p className={`text-[15px] leading-[22px] tracking-[0.07px] text-center transition-colors ${
                 activeTab === tab.id 
                   ? 'font-medium text-[#437c6d]' 
                   : 'font-normal text-[#64748b] hover:text-[#437c6d]'
@@ -143,10 +143,10 @@ export function MuskelTestTabs() {
               transition={{ duration: 0.3, ease: 'easeInOut' }}
               className="flex flex-col gap-12"
             >
-              <p className="font-semibold text-base leading-6 tracking-0 text-[#437c6d] whitespace-pre-line">
+              <p className="font-semibold text-lg leading-7 tracking-0 text-[#437c6d] whitespace-pre-line">
                 {activeContent.title}
               </p>
-              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+              <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                 {activeContent.description}
               </p>
             </motion.div>

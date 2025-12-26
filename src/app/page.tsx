@@ -9,10 +9,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col gap-12 items-center p-6 w-full">
         <div className="flex flex-col gap-6 items-center text-center w-full">
-          <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full">
+          <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full">
             Für einen starken Körper. Für ein gesundes Leben.
           </h1>
-          <p className="font-normal text-base leading-6 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
             Die Kinesiologie kann Ihnen helfen, Ihr körperliches, geistiges und seelisches Wohlbefinden zu verbessern.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <h2 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center w-full">
+        <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full">
           Die Säulen der visionären Kinesiologie nach Kinninger®
         </h2>
         <div className="flex flex-wrap justify-center items-start gap-12 w-full">
@@ -64,10 +64,10 @@ export default function Home() {
       {/* Muskeltest Section */}
       <section className="flex flex-col gap-6 items-start px-0 py-12 w-full">
         <div className="flex flex-col gap-12 items-center px-6 text-center w-full">
-          <h2 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] w-full">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
             Muskeltest – Die transformative Kraft der Kinesiologie
           </h2>
-          <p className="font-normal text-base leading-6 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
             Tauchen Sie ein in die faszinierende Welt des Muskeltests und erleben Sie die transformative Wirkung der visionären Kinesiologie nach Kinninger®
           </p>
         </div>
@@ -82,10 +82,10 @@ export default function Home() {
             CTA Image
           </div>
           <div className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-            <h2 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#f8fafc] w-full">
+            <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full">
               Bereit für Ihre persönliche Transformation?
             </h2>
-            <p className="font-normal text-base leading-6 tracking-0 text-[#f8fafc] w-full">
+            <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full">
               Entdecken Sie die transformative Kraft der Kinesiologie und beginnen Sie noch heute Ihren Weg zu mehr Wohlbefinden, Balance und Lebensenergie.
             </p>
             <Button variant="secondary" className="w-full">
@@ -98,10 +98,10 @@ export default function Home() {
       {/* Pricing Section */}
       <section className="flex flex-col gap-12 items-start p-6 w-full">
         <div className="flex flex-col gap-12 items-center text-center w-full">
-          <h2 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] w-full">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
             Lassen Sie uns Ihre Energie finden
           </h2>
-          <p className="font-normal text-base leading-6 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
             Investieren Sie in Ihr Wohlbefinden mit einer professionellen kinesiologischen Sitzung.
           </p>
         </div>
@@ -114,10 +114,10 @@ export default function Home() {
                 Einzelsitzung
               </p>
               <div className="flex gap-[10px] items-end justify-center">
-                <p className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d]">
+                <p className="font-semibold text-3xl leading-9 tracking-0 text-[#437c6d]">
                   100€
                 </p>
-                <p className="font-semibold text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-semibold text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   / Sitzung
                 </p>
               </div>
@@ -125,25 +125,25 @@ export default function Home() {
             <div className="flex flex-col gap-[10px] w-full">
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Individuelle Behandlung
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Ausführliches Nachgespräch
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Persönliche Empfehlungen
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Behandlungsplanung
                 </p>
               </div>
@@ -160,10 +160,10 @@ export default function Home() {
                 10er Karte
               </p>
               <div className="flex gap-[10px] items-end justify-center">
-                <p className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d]">
+                <p className="font-semibold text-3xl leading-9 tracking-0 text-[#437c6d]">
                   950€
                 </p>
-                <p className="font-semibold text-sm leading-[21px] tracking-[0.07px] text-[#64748b] line-through">
+                <p className="font-semibold text-base leading-6 tracking-[0.07px] text-[#64748b] line-through">
                   1000€
                 </p>
               </div>
@@ -171,25 +171,25 @@ export default function Home() {
             <div className="flex flex-col gap-[10px] w-full">
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   10 Einzelsitzungen
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Flexible Terminplanung
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   24 Monate gültig
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
                 <CheckIcon />
-                <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   50€ Ersparnis
                 </p>
               </div>
