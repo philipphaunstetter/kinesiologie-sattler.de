@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface TabContent {
@@ -51,13 +51,65 @@ const tabsData: TabContent[] = [
 
 export function MuskelTestTabs() {
   const [activeTab, setActiveTab] = useState('muskeltest');
+  const [hasScrolled, setHasScrolled] = useState(false);
+  const tabsRef = useRef<HTMLDivElement>(null);
 
   const activeContent = tabsData.find(tab => tab.id === activeTab) || tabsData[0];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasScrolled && tabsRef.current) {
+            // Animate scroll to show it's scrollable
+            const scrollAmount = 60; // pixels to scroll
+            const duration = 800; // ms
+            const start = performance.now();
+            
+            const animateScroll = (currentTime: number) => {
+              const elapsed = currentTime - start;
+              const progress = Math.min(elapsed / duration, 1);
+              
+              // Ease in-out function
+              const easeInOut = progress < 0.5
+                ? 2 * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+              
+              if (tabsRef.current) {
+                if (progress < 0.5) {
+                  // Scroll right
+                  tabsRef.current.scrollLeft = scrollAmount * easeInOut * 2;
+                } else {
+                  // Scroll back to start
+                  tabsRef.current.scrollLeft = scrollAmount * (1 - (easeInOut - 0.5) * 2);
+                }
+              }
+              
+              if (progress < 1) {
+                requestAnimationFrame(animateScroll);
+              } else {
+                setHasScrolled(true);
+              }
+            };
+            
+            requestAnimationFrame(animateScroll);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (tabsRef.current) {
+      observer.observe(tabsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [hasScrolled]);
 
   return (
     <div className="flex flex-col gap-4 w-full">
       {/* Tabs */}
-      <div className="bg-white overflow-x-auto px-6 py-[10px] w-full scrollbar-hide">
+      <div ref={tabsRef} className="bg-white overflow-x-auto px-6 py-[10px] w-full scrollbar-hide">
         <div className="flex gap-5 items-center whitespace-nowrap">
           {tabsData.map((tab) => (
             <button
