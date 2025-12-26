@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface TabContent {
   id: string;
@@ -80,13 +81,24 @@ export function MuskelTestTabs() {
       </div>
       {/* Content */}
       <div className="px-6">
-        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col gap-12 p-4 rounded-lg">
-          <p className="font-semibold text-base leading-6 tracking-0 text-[#437c6d] whitespace-pre-line">
-            {activeContent.title}
-          </p>
-          <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
-            {activeContent.description}
-          </p>
+        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col gap-12 p-4 rounded-lg overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className="flex flex-col gap-12"
+            >
+              <p className="font-semibold text-base leading-6 tracking-0 text-[#437c6d] whitespace-pre-line">
+                {activeContent.title}
+              </p>
+              <p className="font-normal text-sm leading-[21px] tracking-[0.07px] text-[#64748b]">
+                {activeContent.description}
+              </p>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
