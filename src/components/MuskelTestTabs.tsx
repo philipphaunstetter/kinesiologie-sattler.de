@@ -63,7 +63,7 @@ export function MuskelTestTabs() {
           if (entry.isIntersecting && !hasScrolled && tabsRef.current) {
             // Animate scroll to show it's scrollable
             const scrollAmount = 60; // pixels to scroll
-            const duration = 800; // ms
+            const duration = 1600; // ms
             const start = performance.now();
             
             const animateScroll = (currentTime: number) => {
