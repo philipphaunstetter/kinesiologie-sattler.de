@@ -254,7 +254,7 @@ export default function AboutPage() {
           <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
             <a href="/">Start</a>
             <a href="/ueber-mich">Über mich</a>
-            <p>Leistungen</p>
+            <a href="/leistungen">Leistungen</a>
             <p>Kontakt</p>
             <p>AURA-SOMA®</p>
           </div>
