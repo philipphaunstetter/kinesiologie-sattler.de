@@ -1,11 +1,12 @@
 import { Button } from '@/components/Button';
 import { FeatureCard } from '@/components/FeatureCard';
 import { MuskelTestTabs } from '@/components/MuskelTestTabs';
-import { ScaleIcon, BoneIcon, SofaIcon, LaughIcon, SproutIcon, CheckIcon } from '@/components/Icons';
+import { MobileNavigation } from '@/components/MobileNavigation';
 
 export default function Home() {
   return (
     <main className="bg-white w-full">
+      <MobileNavigation />
       {/* Hero Section */}
       <section className="flex flex-col gap-12 items-center p-6 w-full">
         <div className="flex flex-col gap-6 items-center text-center w-full">
@@ -19,11 +20,12 @@ export default function Home() {
         <Button className="w-auto">
           Termin vereinbaren
         </Button>
-        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden bg-gray-200">
-          {/* Hero Image Placeholder */}
-          <div className="w-full h-full flex items-center justify-center text-[#64748b]">
-            Hero Image
-          </div>
+        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden">
+          <img
+            src="/images/29741336-245b-4ca7-9bd4-faf974739611.JPG"
+            alt="Kinesiologie Behandlung"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
@@ -34,27 +36,27 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap justify-center items-start gap-12 w-full">
           <FeatureCard
-            icon={<ScaleIcon />}
+            icon={<img src="/icons/scale.svg" alt="" className="w-10 h-10" />}
             title="Körperliches Wohlbefinden"
             description="Finden Sie das Gleichgewicht und die Stärke in Ihrem Körper wieder."
           />
           <FeatureCard
-            icon={<BoneIcon />}
+            icon={<img src="/icons/pain.svg" alt="" className="w-10 h-10" />}
             title="Schmerzmanagement"
             description="Reduzieren Sie Schmerzen auf natürliche Weise."
           />
           <FeatureCard
-            icon={<SofaIcon />}
+            icon={<img src="/icons/chill.svg" alt="" className="w-10 h-10" />}
             title={"Geistige\nEntspannung"}
             description="Erreichen Sie tiefere Entspannung durch gezielte Techniken."
           />
           <FeatureCard
-            icon={<LaughIcon />}
+            icon={<img src="/icons/emotion.svg" alt="" className="w-10 h-10" />}
             title={"Befreiende\nEmotionsarbeit"}
             description="Verarbeiten Sie Emotionen und finden Sie innere Balance."
           />
           <FeatureCard
-            icon={<SproutIcon />}
+            icon={<img src="/icons/growth.svg" alt="" className="w-10 h-10" />}
             title={"Persönliches\nWachstum"}
             description="Entdecken Sie Ihr Potenzial und wachsen Sie persönlich."
           />
@@ -77,9 +79,12 @@ export default function Home() {
       {/* CTA Section */}
       <section className="flex flex-col items-start min-h-[650px] w-full">
         <div className="bg-[#437c6d] flex flex-col w-full">
-          <div className="h-[300px] w-full bg-gray-300 flex items-center justify-center text-white">
-            {/* CTA Background Image Placeholder */}
-            CTA Image
+          <div className="h-[300px] w-full overflow-hidden">
+            <img
+              src="/images/35c30a8d-3151-4994-b3c1-fe48d195f665.JPG"
+              alt="Transformation"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col gap-12 items-center px-6 py-12 w-full">
             <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full">
@@ -124,25 +129,25 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-[10px] w-full">
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Individuelle Behandlung
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Ausführliches Nachgespräch
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Persönliche Empfehlungen
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Behandlungsplanung
                 </p>
@@ -170,25 +175,25 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-[10px] w-full">
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   10 Einzelsitzungen
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   Flexible Terminplanung
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   24 Monate gültig
                 </p>
               </div>
               <div className="flex gap-[10px] items-center">
-                <CheckIcon />
+                <img src="/icons/pricing_checkmark.svg" alt="" className="w-5 h-5 flex-shrink-0" />
                 <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
                   50€ Ersparnis
                 </p>
@@ -206,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 p-6 w-full">
+      <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
         <div className="flex flex-col gap-6 items-center w-full">
           <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
             Navigation

@@ -109,15 +109,17 @@ export function MuskelTestTabs() {
   return (
     <div className="flex flex-col gap-4 w-full">
       {/* Tabs */}
-      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 pr-6 py-[10px] w-full scrollbar-hide">
-        <div className="flex gap-5 items-center whitespace-nowrap pr-6">
-          {tabsData.map((tab) => (
+      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide">
+        <div className="flex gap-5 items-center whitespace-nowrap">
+          {tabsData.map((tab, index) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className="flex flex-col gap-[2px] cursor-pointer"
+              className={`flex flex-col gap-[2px] cursor-pointer flex-shrink-0 ${
+                index === tabsData.length - 1 ? 'pr-12' : ''
+              }`}
             >
-              <p className={`text-base leading-6 tracking-0 text-center transition-colors ${
+              <p className={`text-base leading-6 text-center transition-colors ${
                 activeTab === tab.id 
                   ? 'font-medium text-[#437c6d]' 
                   : 'font-normal text-[#64748b] hover:text-[#437c6d]'
@@ -125,7 +127,7 @@ export function MuskelTestTabs() {
                 {tab.label}
               </p>
               {activeTab === tab.id && (
-                <div className="h-[1px] bg-[#437c6d] w-full" />
+                <div className="h-[0.5px] bg-[#437c6d] w-full" />
               )}
             </button>
           ))}
@@ -133,7 +135,7 @@ export function MuskelTestTabs() {
       </div>
       {/* Content */}
       <div className="px-6">
-        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col gap-12 p-4 rounded-lg overflow-hidden">
+        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
