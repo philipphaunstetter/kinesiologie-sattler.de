@@ -256,8 +256,8 @@ export default function Home() {
             Alle Rechte vorbehalten.
           </p>
           <div className="flex font-semibold text-base leading-6 tracking-0 text-[#437c6d] text-center justify-between w-full">
-            <p className="flex-1">Impressum</p>
-            <p className="flex-1">Datenschutz</p>
+            <a href="/impressum" className="flex-1">Impressum</a>
+            <a href="/datenschutz" className="flex-1">Datenschutz</a>
           </div>
         </div>
         <p className="font-normal text-sm leading-5 tracking-[0.07px] text-[#64748b] text-justify w-full">
