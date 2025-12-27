@@ -284,7 +284,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
+      <footer className="bg-white flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
         <div className="flex flex-col gap-6 items-center w-full">
           <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
             Navigation
