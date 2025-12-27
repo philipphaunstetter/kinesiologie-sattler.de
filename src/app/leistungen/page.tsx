@@ -260,7 +260,7 @@ export default function ServicesPage() {
           {/* Tag 3 */}
           <div className="flex flex-col gap-4 items-center w-[125px]">
             <div className="bg-white flex items-center justify-center p-[10px] rounded-xl shadow-xl w-12 h-12">
-              <img src="/icons/growth.svg" alt="" className="w-6 h-6" />
+              <img src="/icons/central.svg" alt="" className="w-6 h-6" />
             </div>
             <div className="flex flex-col items-center text-center w-full">
               <p className="font-semibold text-base leading-6 text-[#437c6d]">
