@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
-  { label: 'Über mich', href: '#' },
+  { label: 'Über mich', href: '/ueber-mich' },
   { label: 'Leistungen', href: '#' },
   { label: 'AURA-SOMA®', href: '#' },
 ];
@@ -16,13 +16,13 @@ export function MobileNavigation() {
     <nav className="bg-white w-full">
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-6">
-        <div className="w-[150px] h-[150px] flex-shrink-0">
+        <a href="/" className="w-[150px] h-[150px] flex-shrink-0">
           <img
             src="/brand_logo.png"
             alt="Kinesiologie Carolin Sattler"
             className="w-full h-full object-cover"
           />
-        </div>
+        </a>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-10 h-10 flex flex-col items-center justify-center gap-[6px] flex-shrink-0"

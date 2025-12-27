@@ -217,8 +217,8 @@ export default function Home() {
             Navigation
           </h3>
           <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
-            <p>Start</p>
-            <p>Über mich</p>
+            <a href="/">Start</a>
+            <a href="/ueber-mich">Über mich</a>
             <p>Leistungen</p>
             <p>Kontakt</p>
             <p>AURA-SOMA®</p>
