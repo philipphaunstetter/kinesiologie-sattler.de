@@ -242,9 +242,6 @@ export default function ServicesPage() {
               <p className="font-semibold text-base leading-6 text-[#437c6d]">
                 Visionsfindung
               </p>
-              <p className="font-normal text-xs leading-4 tracking-[0.18px] text-[#64748b] line-through decoration-solid">
-                Energiebalance & Entspannung
-              </p>
             </div>
           </div>
 
@@ -256,9 +253,6 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center text-center w-full">
               <p className="font-semibold text-base leading-6 text-[#437c6d]">
                 Energiebalance
-              </p>
-              <p className="font-normal text-xs leading-4 tracking-[0.18px] text-[#64748b] line-through decoration-solid">
-                Klarheit & Visionsfindung
               </p>
             </div>
           </div>
@@ -272,9 +266,6 @@ export default function ServicesPage() {
               <p className="font-semibold text-base leading-6 text-[#437c6d]">
                 Potenzial-entfaltung
               </p>
-              <p className="font-normal text-xs leading-4 tracking-[0.18px] text-[#64748b] line-through decoration-solid">
-                Bewusstseins-erweiterung
-              </p>
             </div>
           </div>
 
@@ -286,9 +277,6 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center text-center w-full">
               <p className="font-semibold text-base leading-6 text-[#437c6d]">
                 Transformation
-              </p>
-              <p className="font-normal text-xs leading-4 tracking-[0.18px] text-[#64748b] line-through decoration-solid">
-                Bewusstseins-erweiterung
               </p>
             </div>
           </div>
