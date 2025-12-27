@@ -155,7 +155,7 @@ export default function AuraSomaPage() {
           </div>
           <div className="h-[300px] w-full overflow-hidden">
             <img
-              src="/images/placeholder-cta.jpg"
+              src="/images/96eb8438-8c8b-49ce-970d-6392c12c1eb1.JPG"
               alt="Transformative Reise"
               className="w-full h-full object-cover"
             />
