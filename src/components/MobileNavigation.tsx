@@ -7,6 +7,7 @@ const navItems = [
   { label: 'Über mich', href: '/ueber-mich' },
   { label: 'Leistungen', href: '/leistungen' },
   { label: 'AURA-SOMA®', href: '/aura-soma' },
+  { label: 'Kontakt', href: '/kontakt' },
 ];
 
 export function MobileNavigation() {
