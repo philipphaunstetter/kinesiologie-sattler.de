@@ -173,7 +173,7 @@ export default function AuraSomaPage() {
             <a href="/">Start</a>
             <a href="/ueber-mich">Über mich</a>
             <a href="/leistungen">Leistungen</a>
-            <p>Kontakt</p>
+            <a href="/kontakt">Kontakt</a>
             <a href="/aura-soma">AURA-SOMA®</a>
           </div>
         </div>

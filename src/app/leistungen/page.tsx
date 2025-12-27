@@ -293,8 +293,8 @@ export default function ServicesPage() {
             <a href="/">Start</a>
             <a href="/ueber-mich">Über mich</a>
             <a href="/leistungen">Leistungen</a>
-            <p>Kontakt</p>
-            <p>AURA-SOMA®</p>
+            <a href="/kontakt">Kontakt</a>
+            <a href="/aura-soma">AURA-SOMA®</a>
           </div>
         </div>
         <div className="flex flex-col gap-6 items-center w-full">
