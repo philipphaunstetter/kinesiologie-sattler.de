@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navItems = [
   { label: 'Über mich', href: '/ueber-mich' },
   { label: 'Leistungen', href: '/leistungen' },
-  { label: 'AURA-SOMA®', href: '#' },
+  { label: 'AURA-SOMA®', href: '/aura-soma' },
 ];
 
 export function MobileNavigation() {
