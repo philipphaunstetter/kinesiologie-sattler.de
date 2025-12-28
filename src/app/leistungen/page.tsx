@@ -1,4 +1,5 @@
 import { Button } from '@/components/Button';
+import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
 
 export default function ServicesPage() {
@@ -287,11 +288,13 @@ export default function ServicesPage() {
 
       {/* Footer */}
       <footer className="bg-white flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
+        <div className="w-full max-w-[1440px] mx-auto flex flex-col gap-12">
+        <div className="flex flex-col gap-12 w-full md:flex-row md:justify-between md:items-start">
+          <div className="flex flex-col gap-6 items-center w-full md:items-start md:w-auto">
+          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center md:text-left">
             Navigation
           </h3>
-          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
+          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center md:text-left w-full">
             <a href="/">Start</a>
             <a href="/ueber-mich">Über mich</a>
             <a href="/leistungen">Leistungen</a>
@@ -299,11 +302,11 @@ export default function ServicesPage() {
             <a href="/aura-soma">AURA-SOMA®</a>
           </div>
         </div>
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
+        <div className="flex flex-col gap-6 items-center w-full md:items-start md:w-auto">
+          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center md:text-left">
             Leistungen
           </h3>
-          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
+          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center md:text-left w-full">
             <p>Körperliches Wohlbefinden</p>
             <p>Schmerzmanagement</p>
             <p>Geistige Entspannung</p>
@@ -311,11 +314,11 @@ export default function ServicesPage() {
             <p>Persönliches Wachstum</p>
           </div>
         </div>
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
+        <div className="flex flex-col gap-6 items-center w-full md:items-start md:w-auto">
+          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center md:text-left">
             Kontakt
           </h3>
-          <div className="flex flex-col gap-1 text-base leading-6 tracking-0 text-center w-full">
+          <div className="flex flex-col gap-1 text-base leading-6 tracking-0 text-center md:text-left w-full">
             <p className="font-normal text-[#64748b]">
               Terminvereinbarung nach Absprache
             </p>
@@ -323,6 +326,7 @@ export default function ServicesPage() {
               Jetzt Termin vereinbaren →
             </p>
           </div>
+        </div>
         </div>
         <div className="h-[1px] bg-gray-300 w-full" />
         <div className="flex flex-col gap-4 w-full">
@@ -342,6 +346,7 @@ export default function ServicesPage() {
           <p>
             Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an und unterliegt nicht der Psychotherapiegesetzgebung. Beachten Sie, dass diese Dienstleistungen keine medizinische oder therapeutische Behandlung ersetzen und in Absprache mit Fachleuten durchgeführt werden sollten.
           </p>
+        </div>
         </div>
       </footer>
     </main>
