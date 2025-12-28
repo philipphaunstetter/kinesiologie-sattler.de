@@ -107,7 +107,7 @@ export function MuskelTestTabs() {
   }, [hasScrolled]);
 
   return (
-    <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:px-12">
+    <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:px-12 lg:max-w-[1440px] lg:mx-auto">
       {/* Tabs */}
       <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:py-0 lg:w-auto lg:h-full">
         <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-2 lg:items-start lg:justify-between lg:h-full">
