@@ -1,9 +1,9 @@
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function DatenschutzPage() {
   return (
     <main className="bg-white min-h-screen flex flex-col">
-      <MobileNavigation />
+      <Navbar />
       
       {/* Content Section */}
       <section className="px-6 py-6 flex flex-col gap-6 w-full">

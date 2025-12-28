@@ -1,22 +1,22 @@
 import { Button } from '@/components/Button';
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function AboutPage() {
   return (
     <main className="bg-white w-full">
-      <MobileNavigation />
+      <Navbar />
       
       {/* Hero Section */}
-      <section className="flex flex-col gap-6 items-center py-6 w-full">
-        <div className="w-full h-[586px]">
+      <section className="flex flex-col gap-6 items-center py-6 w-full md:flex-row-reverse md:gap-12 lg:p-12">
+        <div className="w-full h-[586px] md:w-1/2 md:max-w-[500px] md:rounded-2xl md:overflow-hidden">
           <img
             src="/images/197eb551-c7ca-417d-8cf7-143b32032588.JPG"
             alt="Carolin Sattler"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col gap-6 items-center px-6 text-center w-full">
-          <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full">
+        <div className="flex flex-col gap-6 items-center px-6 text-center w-full md:w-1/2 md:text-left md:items-start lg:px-0">
+          <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full lg:text-[48px] lg:leading-[56px]">
             Der Schlüssel zur Balance
           </h1>
           <div className="font-normal text-base leading-6 text-[#64748b] w-full">
@@ -52,13 +52,13 @@ export default function AboutPage() {
       </section>
 
       {/* Qualifications Section */}
-      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] text-center w-full">
+      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full lg:px-12 lg:py-24">
+        <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] text-center w-full lg:text-[36px] lg:leading-[44px]">
           Meine Qualifikationen
         </h2>
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-6 w-full md:flex-row md:items-stretch lg:gap-12">
           {/* Visionäre Kinesiologie Card */}
-          <div className="bg-white border border-[#437c6d] flex flex-col items-start px-6 py-10 rounded-2xl shadow-xl w-full">
+          <div className="bg-white border border-[#437c6d] flex flex-col items-start px-6 py-10 rounded-2xl shadow-xl w-full md:w-1/2">
             <div className="flex flex-col min-h-[300px] items-start justify-between w-full">
               <h3 className="font-semibold text-xl leading-6 text-[#437c6d] w-full">
                 Visionäre Kinesiologie nach Kinninger®
@@ -98,7 +98,7 @@ export default function AboutPage() {
           </div>
 
           {/* AURA-SOMA Card */}
-          <div className="bg-white border border-[#437c6d] flex flex-col items-start px-6 py-10 rounded-2xl shadow-xl w-full">
+          <div className="bg-white border border-[#437c6d] flex flex-col items-start px-6 py-10 rounded-2xl shadow-xl w-full md:w-1/2">
             <div className="flex flex-col min-h-[300px] items-start justify-between w-full">
               <h3 className="font-semibold text-xl leading-6 text-[#437c6d] w-full">
                 AURA-SOMA® Practitioner
@@ -198,16 +198,16 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <div className="w-full max-w-[337px] rounded-xl overflow-hidden">
+      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full md:flex-row md:justify-center md:gap-16 lg:p-24">
+        <div className="w-full max-w-[337px] rounded-xl overflow-hidden flex-shrink-0">
           <img
             src="/images/8ef99100-8ef6-4f19-bb9c-b2419c3e5ecb.JPG"
             alt="Meine Mission"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col gap-6 text-center w-full">
-          <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full">
+        <div className="flex flex-col gap-6 text-center w-full md:text-left md:max-w-[600px]">
+          <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Meine Mission
           </h2>
           <div className="font-normal text-base leading-6 text-[#64748b] w-full">
@@ -222,20 +222,20 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="flex flex-col items-start min-h-[650px] w-full">
-        <div className="bg-[rgba(67,124,109,0.1)] flex flex-col w-full">
-          <div className="flex flex-col gap-12 items-center px-6 py-6 w-full">
-            <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full text-center">
+      <section className="flex flex-col items-start min-h-[650px] w-full lg:min-h-auto">
+        <div className="bg-[rgba(67,124,109,0.1)] flex flex-col w-full lg:flex-row lg:items-center">
+          <div className="flex flex-col gap-12 items-center px-6 py-6 w-full lg:w-1/2 lg:p-24 lg:items-start lg:text-left">
+            <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full text-center lg:text-left lg:text-[36px] lg:leading-[44px]">
               Bereit für Ihre transformative Reise?
             </h2>
-            <p className="font-normal text-base leading-6 text-[#437c6d] w-full text-center">
+            <p className="font-normal text-base leading-6 text-[#437c6d] w-full text-center lg:text-left lg:text-lg lg:leading-7">
               Lassen Sie uns gemeinsam den Schlüssel zu Ihrer inneren Balance und Ihrem authentischen Lebensweg entdecken.
             </p>
-            <Button className="w-full">
+            <Button className="w-full md:w-auto">
               Zum Fragebogen
             </Button>
           </div>
-          <div className="h-[300px] w-full overflow-hidden">
+          <div className="h-[300px] w-full overflow-hidden lg:h-[500px] lg:w-1/2">
             <img
               src="/images/2c6b1351-bc0f-4111-8a81-71401c16496c.JPG"
               alt="Transformative Reise"

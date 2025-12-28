@@ -1,9 +1,9 @@
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function KontaktPage() {
   return (
     <main className="bg-white min-h-screen flex flex-col">
-      <MobileNavigation />
+      <Navbar />
       
       {/* Hero Section */}
       <section className="w-full">

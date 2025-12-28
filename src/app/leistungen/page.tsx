@@ -1,10 +1,10 @@
 import { Button } from '@/components/Button';
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function ServicesPage() {
   return (
     <main className="bg-white w-full">
-      <MobileNavigation />
+      <Navbar />
       
       {/* Hero Section */}
       <section className="flex flex-col gap-6 items-center p-6 w-full text-center">

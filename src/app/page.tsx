@@ -1,26 +1,26 @@
 import { Button } from '@/components/Button';
 import { FeatureCard } from '@/components/FeatureCard';
 import { MuskelTestTabs } from '@/components/MuskelTestTabs';
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function Home() {
   return (
     <main className="bg-white w-full">
-      <MobileNavigation />
+      <Navbar />
       {/* Hero Section */}
-      <section className="flex flex-col gap-12 items-center p-6 w-full">
-        <div className="flex flex-col gap-6 items-center text-center w-full">
-          <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full">
+      <section className="flex flex-col gap-12 items-center p-6 w-full md:flex-row md:justify-between md:gap-8 lg:p-12">
+        <div className="flex flex-col gap-6 items-center text-center w-full md:items-start md:text-left md:w-1/2">
+          <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full lg:text-[48px] lg:leading-[56px]">
             Für einen starken Körper. Für ein gesundes Leben.
           </h1>
           <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
             Die Kinesiologie kann Ihnen helfen, Ihr körperliches, geistiges und seelisches Wohlbefinden zu verbessern.
           </p>
+          <Button className="w-auto">
+            Termin vereinbaren
+          </Button>
         </div>
-        <Button className="w-auto">
-          Termin vereinbaren
-        </Button>
-        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden">
+        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden md:w-1/2 md:max-w-[500px]">
           <img
             src="/images/29741336-245b-4ca7-9bd4-faf974739611.JPG"
             alt="Kinesiologie Behandlung"
@@ -30,11 +30,11 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full">
+      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full lg:px-12 lg:py-24">
+        <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full lg:text-[36px] lg:leading-[44px]">
           Die Säulen der visionären Kinesiologie nach Kinninger®
         </h2>
-        <div className="flex flex-wrap justify-center items-start gap-12 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-[1200px]">
           <FeatureCard
             icon={<img src="/icons/scale.svg" alt="" className="w-10 h-10" />}
             title="Körperliches Wohlbefinden"
@@ -77,23 +77,23 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="flex flex-col items-start min-h-[650px] w-full">
-        <div className="bg-[#437c6d] flex flex-col w-full">
-          <div className="h-[300px] w-full overflow-hidden">
+      <section className="flex flex-col items-start min-h-[650px] w-full lg:min-h-auto">
+        <div className="bg-[#437c6d] flex flex-col w-full lg:flex-row-reverse lg:items-center">
+          <div className="h-[300px] w-full overflow-hidden lg:h-[500px] lg:w-1/2">
             <img
               src="/images/35c30a8d-3151-4994-b3c1-fe48d195f665.JPG"
               alt="Transformation"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-            <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full">
+          <div className="flex flex-col gap-12 items-center px-6 py-12 w-full lg:w-1/2 lg:p-24 lg:items-start lg:text-left">
+            <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full lg:text-[36px] lg:leading-[44px]">
               Bereit für Ihre persönliche Transformation?
             </h2>
             <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full">
               Entdecken Sie die transformative Kraft der Kinesiologie und beginnen Sie noch heute Ihren Weg zu mehr Wohlbefinden, Balance und Lebensenergie.
             </p>
-            <Button variant="secondary" className="w-full">
+            <Button variant="secondary" className="w-full md:w-auto">
               Jetzt Termin vereinbaren
             </Button>
           </div>
@@ -111,9 +111,9 @@ export default function Home() {
           </p>
         </div>
         
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-4 w-full md:flex-row md:justify-center md:items-stretch max-w-[1000px] mx-auto">
           {/* Single Session */}
-          <div className="border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full">
+          <div className="border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full md:w-1/2">
             <div className="flex flex-col gap-[10px] items-center w-full">
               <p className="font-semibold text-base leading-6 tracking-0 text-black text-center">
                 Einzelsitzung
@@ -159,7 +159,7 @@ export default function Home() {
           </div>
 
           {/* 10-Card Package */}
-          <div className="bg-[rgba(67,124,109,0.05)] border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full">
+          <div className="bg-[rgba(67,124,109,0.05)] border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full md:w-1/2">
             <div className="flex flex-col gap-[10px] items-center w-full">
               <p className="font-semibold text-base leading-6 tracking-0 text-black text-center">
                 10er Karte
