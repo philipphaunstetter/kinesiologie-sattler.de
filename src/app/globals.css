@@ -69,4 +69,71 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+  
+  /* Responsive container with max-widths */
+  .container-responsive {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Mobile: full width with padding */
+  @media (max-width: 767px) {
+    .container-responsive {
+      max-width: 100%;
+    }
+  }
+  
+  /* Tablet: 720px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container-responsive {
+      max-width: 720px;
+    }
+  }
+  
+  /* Desktop: 960px */
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .container-responsive {
+      max-width: 960px;
+    }
+  }
+  
+  /* Large Desktop: 1140px */
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    .container-responsive {
+      max-width: 1140px;
+    }
+  }
+  
+  /* Wide screens: 1200px max */
+  @media (min-width: 1440px) {
+    .container-responsive {
+      max-width: 1200px;
+    }
+  }
+  
+  /* Fluid typography utilities */
+  .text-fluid-sm {
+    font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);
+  }
+  
+  .text-fluid-base {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  }
+  
+  .text-fluid-lg {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  }
+  
+  .text-fluid-xl {
+    font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  }
+  
+  .text-fluid-2xl {
+    font-size: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  }
+  
+  .text-fluid-3xl {
+    font-size: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+  }
 }

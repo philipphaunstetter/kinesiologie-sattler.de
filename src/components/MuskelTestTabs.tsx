@@ -107,10 +107,10 @@ export function MuskelTestTabs() {
   }, [hasScrolled]);
 
   return (
-    <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:px-12 lg:max-w-[1440px] lg:mx-auto">
+    <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:justify-center">
       {/* Tabs */}
-      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:py-0 lg:w-auto lg:h-full">
-        <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-2 lg:items-start lg:justify-between lg:h-full">
+      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:w-[280px]">
+        <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-0 lg:items-start lg:justify-between lg:h-full lg:py-4">
           {tabsData.map((tab, index) => (
             <button
               key={tab.id}
@@ -134,8 +134,8 @@ export function MuskelTestTabs() {
         </div>
       </div>
       {/* Content */}
-      <div className="px-6 lg:px-0 lg:flex-1 lg:max-w-[800px]">
-        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px] lg:p-8 lg:h-full">
+      <div className="px-6 lg:px-0 lg:flex-1 lg:max-w-[600px] lg:flex">
+        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px] lg:p-8 lg:w-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -143,12 +143,12 @@ export function MuskelTestTabs() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="flex flex-col gap-12"
+              className="flex flex-col gap-12 text-left"
             >
-              <p className="font-semibold text-lg leading-7 tracking-0 text-[#437c6d] whitespace-pre-line lg:text-2xl">
+              <p className="font-semibold text-lg leading-7 tracking-0 text-[#437c6d] whitespace-pre-line lg:text-2xl text-left">
                 {activeContent.title}
               </p>
-              <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b] lg:text-lg lg:leading-7">
+              <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b] lg:text-lg lg:leading-7 text-left">
                 {activeContent.description}
               </p>
             </motion.div>

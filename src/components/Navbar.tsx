@@ -24,7 +24,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full sticky top-0 z-50 shadow-sm">
+    <nav className="bg-white w-full sticky top-0 z-50">
       {/* Mobile Header */}
       <div className="lg:hidden flex items-center justify-between px-6 py-6 w-full max-w-[1440px] mx-auto">
         <a href="/" className="w-[150px] h-[150px] flex-shrink-0">
