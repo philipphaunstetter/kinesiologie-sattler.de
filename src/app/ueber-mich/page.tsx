@@ -5,6 +5,7 @@ export default function AboutPage() {
   return (
     <main className="bg-white w-full">
       <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       
       {/* Hero Section */}
       <section className="flex flex-col gap-6 items-center py-6 w-full md:flex-row-reverse md:gap-12 lg:p-12">
@@ -19,7 +20,7 @@ export default function AboutPage() {
           <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full lg:text-[48px] lg:leading-[56px]">
             Der Schlüssel zur Balance
           </h1>
-          <div className="font-normal text-base leading-6 text-[#64748b] w-full">
+          <div className="font-normal text-base leading-6 text-[#64748b] w-full lg:text-lg lg:leading-7">
             <p className="mb-4">
               Ich bin Carolin Sattler, Ihre professionelle Wegbegleiterin auf der Reise zu ganzheitlichem Wohlbefinden und authentischer Lebensgestaltung.
             </p>
@@ -34,11 +35,11 @@ export default function AboutPage() {
       </section>
 
       {/* Personal Transformation Section */}
-      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full text-center">
-        <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full">
+      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full text-center lg:px-12 lg:py-24">
+        <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
           Die Erweckung: Meine persönliche Transformation
         </h2>
-        <div className="font-normal text-base leading-6 text-[#64748b] w-full">
+        <div className="font-normal text-base leading-6 text-[#64748b] w-full max-w-[900px] lg:text-lg lg:leading-7">
           <p className="mb-4">
             Mein eigener Weg zu diesen transformativen Methoden begann durch persönliche Herausforderungen, die mich zu den ersten Sitzungen der Visionären Kinesiologie nach Kinninger® führten.
           </p>
@@ -140,12 +141,12 @@ export default function AboutPage() {
       </section>
 
       {/* Holistic Approach Section */}
-      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full">
+      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full lg:px-12 lg:py-24">
         <div className="flex flex-col gap-6 text-center w-full">
-          <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full">
+          <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Mein ganzheitlicher Ansatz
           </h2>
-          <p className="font-normal text-base leading-6 text-[#64748b] w-full">
+          <p className="font-normal text-base leading-6 text-[#64748b] w-full max-w-[900px] mx-auto lg:text-lg lg:leading-7">
             In meiner Praxis vereinige ich die kraftvollen Methoden der Visionären Kinesiologie mit der heilsamen Farbenergie von AURA-SOMA®. Dieser einzigartige Ansatz ermöglicht es mir, Sie auf allen Ebenen Ihres Seins zu unterstützen und Ihre individuellen Bedürfnisse ganzheitlich zu adressieren.
           </p>
         </div>
@@ -210,7 +211,7 @@ export default function AboutPage() {
           <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Meine Mission
           </h2>
-          <div className="font-normal text-base leading-6 text-[#64748b] w-full">
+          <div className="font-normal text-base leading-6 text-[#64748b] w-full lg:text-lg lg:leading-7">
             <p className="mb-4">
               Meine Arbeit ist eine psychologische, beratende Tätigkeit außerhalb der Heilkunde. Sie ergänzt medizinische Behandlungen wertvoll und unterstützt Sie bei Ihrer persönlichen Entwicklung und dem Wohlbefinden.
             </p>
@@ -244,6 +245,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">

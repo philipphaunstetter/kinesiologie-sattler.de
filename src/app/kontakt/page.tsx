@@ -4,6 +4,7 @@ export default function KontaktPage() {
   return (
     <main className="bg-white min-h-screen flex flex-col">
       <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       
       {/* Hero Section */}
       <section className="w-full">
@@ -43,6 +44,7 @@ export default function KontaktPage() {
           </a>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">

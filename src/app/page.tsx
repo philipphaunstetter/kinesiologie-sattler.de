@@ -7,13 +7,14 @@ export default function Home() {
   return (
     <main className="bg-white w-full">
       <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       {/* Hero Section */}
       <section className="flex flex-col gap-12 items-center p-6 w-full md:flex-row md:justify-between md:gap-8 lg:p-12">
         <div className="flex flex-col gap-6 items-center text-center w-full md:items-start md:text-left md:w-1/2">
           <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full lg:text-[48px] lg:leading-[56px]">
             Für einen starken Körper. Für ein gesundes Leben.
           </h1>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full lg:text-xl lg:leading-8">
             Die Kinesiologie kann Ihnen helfen, Ihr körperliches, geistiges und seelisches Wohlbefinden zu verbessern.
           </p>
           <Button className="w-auto">
@@ -64,12 +65,12 @@ export default function Home() {
       </section>
 
       {/* Muskeltest Section */}
-      <section className="flex flex-col gap-6 items-start px-0 py-12 w-full">
-        <div className="flex flex-col gap-12 items-center px-6 text-center w-full">
-          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
+      <section className="flex flex-col gap-6 items-start px-0 py-12 w-full lg:py-24">
+        <div className="flex flex-col gap-12 items-center px-6 text-center w-full lg:px-12">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Muskeltest – Die transformative Kraft der Kinesiologie
           </h2>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full max-w-[900px] lg:text-xl lg:leading-8">
             Tauchen Sie ein in die faszinierende Welt des Muskeltests und erleben Sie die transformative Wirkung der visionären Kinesiologie nach Kinninger®
           </p>
         </div>
@@ -90,7 +91,7 @@ export default function Home() {
             <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full lg:text-[36px] lg:leading-[44px]">
               Bereit für Ihre persönliche Transformation?
             </h2>
-            <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full">
+            <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full lg:text-xl lg:leading-8">
               Entdecken Sie die transformative Kraft der Kinesiologie und beginnen Sie noch heute Ihren Weg zu mehr Wohlbefinden, Balance und Lebensenergie.
             </p>
             <Button variant="secondary" className="w-full md:w-auto">
@@ -101,12 +102,12 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="flex flex-col gap-12 items-start p-6 w-full">
+      <section className="flex flex-col gap-12 items-start p-6 w-full lg:px-12 lg:py-24">
         <div className="flex flex-col gap-12 items-center text-center w-full">
-          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Lassen Sie uns Ihre Energie finden
           </h2>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full max-w-[800px] lg:text-xl lg:leading-8">
             Investieren Sie in Ihr Wohlbefinden mit einer professionellen kinesiologischen Sitzung.
           </p>
         </div>
@@ -209,6 +210,7 @@ export default function Home() {
           <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an. Diese Dienstleistungen ersetzen keine medizinische oder therapeutische Behandlung. Bei gesundheitlichen Anliegen konsultieren Sie bitte qualifizierte Fachkräfte.
         </p>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">

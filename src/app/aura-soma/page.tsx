@@ -5,6 +5,7 @@ export default function AuraSomaPage() {
   return (
     <main className="bg-white w-full">
       <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       
       {/* Hero Section */}
       <section className="flex flex-col gap-6 items-center p-6 w-full text-center">
@@ -162,6 +163,7 @@ export default function AuraSomaPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-white flex flex-col gap-12 px-6 pt-6 pb-6 w-full">

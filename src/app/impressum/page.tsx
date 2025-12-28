@@ -4,6 +4,7 @@ export default function ImpressumPage() {
   return (
     <main className="bg-white min-h-screen flex flex-col">
       <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       
       {/* Content Section */}
       <section className="px-6 py-6 flex flex-col gap-6 w-full">
@@ -121,6 +122,7 @@ export default function ImpressumPage() {
           </p>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
