@@ -227,6 +227,7 @@ export default function AboutPage() {
               Es ist mir eine Herzensangelegenheit, Menschen dabei zu begleiten, ihre authentische Vision zu entdecken, energetische Blockaden zu lösen und ein Leben in Einklang mit ihrer wahren Bestimmung zu führen.
             </p>
           </div>
+          </div>
         </div>
       </section>
 
