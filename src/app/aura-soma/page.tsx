@@ -1,36 +1,41 @@
 import { Button } from '@/components/Button';
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Footer } from '@/components/Footer';
+import { Navbar } from '@/components/Navbar';
 
 export default function AuraSomaPage() {
   return (
     <main className="bg-white w-full">
-      <MobileNavigation />
+      <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       
       {/* Hero Section */}
-      <section className="flex flex-col gap-6 items-center p-6 w-full text-center">
-        <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full">
+      <section className="flex flex-col gap-6 lg:gap-10 items-center p-6 lg:py-24 w-full text-center">
+        <div className="container-responsive px-6 max-w-[800px]">
+          <h1 className="font-semibold text-[30px] leading-[30px] tracking-[-0.5px] text-[#437c6d] w-full">
           Entdecken Sie die Kraft der Farben für Ihre Seele
         </h1>
         <p className="font-normal text-base leading-6 text-[#64748b] w-full">
           Als zertifizierte AURA-SOMA® Practitioner begleite ich Sie auf Ihrem Weg zur energetischen Balance durch die wohltuende Kraft von Farben, Pflanzen und Kristallen.
         </p>
-        <Button className="w-auto">
+          <Button className="w-auto">
           Jetzt Beratung buchen
-        </Button>
+          </Button>
+        </div>
       </section>
 
       {/* What is AURA-SOMA Section */}
-      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <div className="flex flex-col gap-6 items-start text-center w-full">
+      <section className="flex flex-col gap-12 lg:gap-16 items-center py-12 lg:py-20 w-full">
+        <div className="container-responsive px-6">
+          <div className="flex flex-col gap-6 items-start text-center w-full max-w-[800px] mx-auto mb-6">
           <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full">
             Was ist AURA-SOMA®?
           </h2>
           <p className="font-normal text-base leading-6 text-[#64748b] w-full">
             AURA-SOMA® ist ein energetisches Körperpflegesystem, das die natürlichen Energien von Farben, Pflanzen und Kristallen nutzt, um ganzheitlich Wohlbefinden und Vitalität zu fördern.
           </p>
-        </div>
+          </div>
 
-        <div className="flex flex-col gap-6 w-full">
+          <div className="flex flex-col md:flex-row gap-6 w-full">
           {/* Card 1: Die Kraft der Farben */}
           <div className="bg-white flex flex-col gap-8 items-start p-5 rounded-xl shadow-xl w-full">
             <p className="font-semibold text-base leading-6 text-[#437c6d] text-center w-full">
@@ -62,21 +67,23 @@ export default function AuraSomaPage() {
               ))}
             </div>
           </div>
+          </div>
         </div>
       </section>
 
       {/* AURA-SOMA Treatments Section */}
-      <section className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <div className="flex flex-col gap-6 items-start text-center w-full">
+      <section className="flex flex-col gap-12 lg:gap-16 items-center py-12 lg:py-20 w-full">
+        <div className="container-responsive px-6">
+          <div className="flex flex-col gap-6 items-start text-center w-full max-w-[800px] mx-auto mb-6">
           <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full">
             AURA-SOMA® Behandlungen
           </h2>
           <p className="font-normal text-base leading-6 text-[#64748b] w-full">
             Die kraftvolle Wirkung der Farben und Essenzen für Ihre energetische Harmonisierung
           </p>
-        </div>
+          </div>
 
-        <div className="flex flex-col gap-6 w-full">
+          <div className="flex flex-col md:flex-row gap-6 w-full">
           {/* Treatment 1: AURA-SOMA Beratung */}
           <div className="bg-white flex flex-col gap-8 items-start p-5 rounded-xl shadow-xl w-full">
             <div className="flex flex-col gap-[10px] items-start w-full">
@@ -134,26 +141,29 @@ export default function AuraSomaPage() {
             </div>
             <Button className="w-full">
               Massage buchen
-            </Button>
+              </Button>
+            </div>
+          </div>
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
-      <section className="flex flex-col items-start min-h-[650px] w-full">
-        <div className="bg-[rgba(67,124,109,0.1)] flex flex-col w-full">
-          <div className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-            <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] w-full text-center">
+      <section className="flex flex-col items-start w-full">
+        <div className="bg-[rgba(67,124,109,0.1)] flex flex-col lg:flex-row w-full">
+          <div className="lg:flex-1 flex items-center justify-center order-2 lg:order-1">
+            <div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left px-6 py-12 lg:px-12 lg:py-16 max-w-[600px]">
+              <h2 className="font-semibold text-2xl leading-[28.8px] text-[#437c6d] lg:text-[32px] lg:leading-[36px]">
               Bereit für Ihre transformative Reise?
-            </h2>
-            <p className="font-normal text-base leading-6 text-[#437c6d] w-full text-center">
+              </h2>
+              <p className="font-normal text-base leading-6 text-[#437c6d]">
               Lassen Sie uns gemeinsam den Schlüssel zu Ihrer inneren Balance und Ihrem authentischen Lebensweg entdecken.
-            </p>
-            <Button className="w-full">
+              </p>
+              <Button className="w-full sm:w-auto">
               Zum Fragebogen
-            </Button>
+              </Button>
+            </div>
           </div>
-          <div className="h-[300px] w-full overflow-hidden">
+          <div className="h-[300px] lg:h-auto lg:flex-1 w-full overflow-hidden order-1 lg:order-2">
             <img
               src="/images/96eb8438-8c8b-49ce-970d-6392c12c1eb1.JPG"
               alt="Transformative Reise"
@@ -162,6 +172,7 @@ export default function AuraSomaPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="bg-white flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
@@ -213,8 +224,8 @@ export default function AuraSomaPage() {
             <a href="/datenschutz" className="flex-1">Datenschutz</a>
           </div>
         </div>
-        <div className="font-normal text-sm leading-5 tracking-[0.07px] text-[#64748b] text-justify w-full">
-          <p className="mb-[14px]">
+        <div className="font-normal text-sm leading-5 tracking-[0.07px] text-[#64748b] text-justify w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <p>
             <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler ist keine medizinische Fachkraft und ersetzt keine ärztliche oder heilpraktische Behandlung. Bei gesundheitlichen Anliegen wird dringend geraten, sich an qualifizierte Schulmediziner, Heilpraktiker oder Psychotherapeuten zu wenden. Es ist wichtig, bestehende Behandlungen nicht zu unterbrechen.
           </p>
           <p>

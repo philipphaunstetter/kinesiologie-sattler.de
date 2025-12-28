@@ -10,13 +10,23 @@ const navItems = [
   { label: 'Kontakt', href: '/kontakt' },
 ];
 
-export function MobileNavigation() {
+const leftNavItems = [
+  { label: 'Über mich', href: '/ueber-mich' },
+  { label: 'Leistungen', href: '/leistungen' },
+];
+
+const rightNavItems = [
+  { label: 'AURA-SOMA®', href: '/aura-soma' },
+  { label: 'Kontakt', href: '/kontakt' },
+];
+
+export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full">
-      {/* Header */}
-      <div className="flex items-center justify-between px-6 py-6">
+    <nav className="bg-white w-full sticky top-0 z-50">
+      {/* Mobile Header */}
+      <div className="lg:hidden flex items-center justify-between px-6 py-6 w-full max-w-[1440px] mx-auto">
         <a href="/" className="w-[150px] h-[150px] flex-shrink-0">
           <img
             src="/brand_logo.png"
@@ -55,7 +65,7 @@ export function MobileNavigation() {
         </button>
       </div>
 
-      {/* Navigation Menu */}
+      {/* Mobile Navigation Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -63,7 +73,7 @@ export function MobileNavigation() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="border-t border-b border-[rgba(67,124,109,0.5)] overflow-hidden"
+            className="lg:hidden border-t border-b border-[rgba(67,124,109,0.5)] overflow-hidden"
           >
             <div className="px-6 py-12 min-h-[200px] flex items-center">
               <div className="flex flex-col items-center justify-between w-full gap-6">
@@ -89,6 +99,44 @@ export function MobileNavigation() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Desktop Header */}
+      <div className="hidden lg:flex items-center justify-center w-full px-12 py-4 max-w-[1440px] mx-auto">
+        {/* Left Nav */}
+        <div className="flex items-center gap-12 flex-1 justify-end">
+          {leftNavItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="font-semibold text-lg text-[#437c6d] hover:text-[#2d5449] transition-colors whitespace-nowrap"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+
+        {/* Center Logo */}
+        <a href="/" className="w-[180px] h-[180px] flex-shrink-0 mx-12">
+          <img
+            src="/brand_logo.png"
+            alt="Kinesiologie Carolin Sattler"
+            className="w-full h-full object-cover"
+          />
+        </a>
+
+        {/* Right Nav */}
+        <div className="flex items-center gap-12 flex-1 justify-start">
+          {rightNavItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="font-semibold text-lg text-[#437c6d] hover:text-[#2d5449] transition-colors whitespace-nowrap"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </div>
     </nav>
   );
 }
