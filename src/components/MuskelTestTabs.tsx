@@ -107,19 +107,19 @@ export function MuskelTestTabs() {
   }, [hasScrolled]);
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:px-12 lg:max-w-[1440px] lg:mx-auto">
       {/* Tabs */}
-      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide">
-        <div className="flex gap-5 items-center whitespace-nowrap">
+      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:py-0 lg:w-auto lg:h-full">
+        <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-2 lg:items-start lg:justify-between lg:h-full">
           {tabsData.map((tab, index) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex flex-col gap-[2px] cursor-pointer flex-shrink-0 ${
-                index === tabsData.length - 1 ? 'pr-12' : ''
+              className={`flex flex-col gap-[2px] cursor-pointer flex-shrink-0 lg:flex-row lg:gap-3 lg:w-full lg:text-left ${
+                index === tabsData.length - 1 ? 'pr-12 lg:pr-0' : ''
               }`}
             >
-              <p className={`text-base leading-6 text-center transition-colors ${
+              <p className={`text-base leading-6 text-center transition-colors lg:text-left ${
                 activeTab === tab.id 
                   ? 'font-medium text-[#437c6d]' 
                   : 'font-normal text-[#64748b] hover:text-[#437c6d]'
@@ -127,15 +127,15 @@ export function MuskelTestTabs() {
                 {tab.label}
               </p>
               {activeTab === tab.id && (
-                <div className="h-[0.5px] bg-[#437c6d] w-full" />
+                <div className="h-[0.5px] bg-[#437c6d] w-full lg:hidden" />
               )}
             </button>
           ))}
         </div>
       </div>
       {/* Content */}
-      <div className="px-6">
-        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px]">
+      <div className="px-6 lg:px-0 lg:flex-1 lg:max-w-[800px]">
+        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px] lg:p-8 lg:h-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -145,10 +145,10 @@ export function MuskelTestTabs() {
               transition={{ duration: 0.3, ease: 'easeInOut' }}
               className="flex flex-col gap-12"
             >
-              <p className="font-semibold text-lg leading-7 tracking-0 text-[#437c6d] whitespace-pre-line">
+              <p className="font-semibold text-lg leading-7 tracking-0 text-[#437c6d] whitespace-pre-line lg:text-2xl">
                 {activeContent.title}
               </p>
-              <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b]">
+              <p className="font-normal text-base leading-6 tracking-[0.07px] text-[#64748b] lg:text-lg lg:leading-7">
                 {activeContent.description}
               </p>
             </motion.div>

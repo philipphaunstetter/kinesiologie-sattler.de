@@ -1,26 +1,28 @@
 import { Button } from '@/components/Button';
 import { FeatureCard } from '@/components/FeatureCard';
+import { Footer } from '@/components/Footer';
 import { MuskelTestTabs } from '@/components/MuskelTestTabs';
-import { MobileNavigation } from '@/components/MobileNavigation';
+import { Navbar } from '@/components/Navbar';
 
 export default function Home() {
   return (
     <main className="bg-white w-full">
-      <MobileNavigation />
+      <Navbar />
+      <div className="w-full max-w-[1440px] mx-auto">
       {/* Hero Section */}
-      <section className="flex flex-col gap-12 items-center p-6 w-full">
-        <div className="flex flex-col gap-6 items-center text-center w-full">
-          <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full">
+      <section className="flex flex-col gap-12 items-center p-6 w-full md:flex-row md:justify-between md:gap-8 lg:p-12">
+        <div className="flex flex-col gap-6 items-center text-center w-full md:items-start md:text-left md:w-1/2">
+          <h1 className="font-semibold text-[36px] leading-[38px] tracking-[-0.5px] text-[#437c6d] w-full lg:text-[48px] lg:leading-[56px]">
             Für einen starken Körper. Für ein gesundes Leben.
           </h1>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full lg:text-xl lg:leading-8">
             Die Kinesiologie kann Ihnen helfen, Ihr körperliches, geistiges und seelisches Wohlbefinden zu verbessern.
           </p>
+          <Button className="w-auto">
+            Termin vereinbaren
+          </Button>
         </div>
-        <Button className="w-auto">
-          Termin vereinbaren
-        </Button>
-        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden">
+        <div className="w-full aspect-[342/369] rounded-xl overflow-hidden md:w-1/2 md:max-w-[500px]">
           <img
             src="/images/29741336-245b-4ca7-9bd4-faf974739611.JPG"
             alt="Kinesiologie Behandlung"
@@ -30,11 +32,11 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full">
-        <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full">
+      <section className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 items-center px-6 py-12 w-full lg:px-12 lg:py-24">
+        <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full lg:text-[36px] lg:leading-[44px]">
           Die Säulen der visionären Kinesiologie nach Kinninger®
         </h2>
-        <div className="flex flex-wrap justify-center items-start gap-12 w-full">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-8 w-full max-w-[1200px]">
           <FeatureCard
             icon={<img src="/icons/scale.svg" alt="" className="w-10 h-10" />}
             title="Körperliches Wohlbefinden"
@@ -64,12 +66,12 @@ export default function Home() {
       </section>
 
       {/* Muskeltest Section */}
-      <section className="flex flex-col gap-6 items-start px-0 py-12 w-full">
-        <div className="flex flex-col gap-12 items-center px-6 text-center w-full">
-          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
+      <section className="flex flex-col gap-6 items-start px-0 py-12 w-full lg:py-24">
+        <div className="flex flex-col gap-12 items-center px-6 text-center w-full lg:px-12">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Muskeltest – Die transformative Kraft der Kinesiologie
           </h2>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full max-w-[900px] lg:text-xl lg:leading-8">
             Tauchen Sie ein in die faszinierende Welt des Muskeltests und erleben Sie die transformative Wirkung der visionären Kinesiologie nach Kinninger®
           </p>
         </div>
@@ -77,23 +79,23 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="flex flex-col items-start min-h-[650px] w-full">
-        <div className="bg-[#437c6d] flex flex-col w-full">
-          <div className="h-[300px] w-full overflow-hidden">
+      <section className="flex flex-col items-start min-h-[650px] w-full lg:min-h-auto">
+        <div className="bg-[#437c6d] flex flex-col w-full lg:flex-row-reverse lg:items-center">
+          <div className="h-[300px] w-full overflow-hidden lg:h-[500px] lg:w-1/2">
             <img
               src="/images/35c30a8d-3151-4994-b3c1-fe48d195f665.JPG"
               alt="Transformation"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col gap-12 items-center px-6 py-12 w-full">
-            <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full">
+          <div className="flex flex-col gap-12 items-center px-6 py-12 w-full lg:w-1/2 lg:p-24 lg:items-start lg:text-left">
+            <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#f8fafc] w-full lg:text-[36px] lg:leading-[44px]">
               Bereit für Ihre persönliche Transformation?
             </h2>
-            <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full">
+            <p className="font-normal text-lg leading-7 tracking-0 text-[#f8fafc] w-full lg:text-xl lg:leading-8">
               Entdecken Sie die transformative Kraft der Kinesiologie und beginnen Sie noch heute Ihren Weg zu mehr Wohlbefinden, Balance und Lebensenergie.
             </p>
-            <Button variant="secondary" className="w-full">
+            <Button variant="secondary" className="w-full md:w-auto">
               Jetzt Termin vereinbaren
             </Button>
           </div>
@@ -101,19 +103,19 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="flex flex-col gap-12 items-start p-6 w-full">
+      <section className="flex flex-col gap-12 items-start p-6 w-full lg:px-12 lg:py-24">
         <div className="flex flex-col gap-12 items-center text-center w-full">
-          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full">
+          <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] w-full lg:text-[36px] lg:leading-[44px]">
             Lassen Sie uns Ihre Energie finden
           </h2>
-          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full">
+          <p className="font-normal text-lg leading-7 tracking-0 text-[#64748b] w-full max-w-[800px] lg:text-xl lg:leading-8">
             Investieren Sie in Ihr Wohlbefinden mit einer professionellen kinesiologischen Sitzung.
           </p>
         </div>
         
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-4 w-full md:flex-row md:justify-center md:items-stretch max-w-[1000px] mx-auto">
           {/* Single Session */}
-          <div className="border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full">
+          <div className="border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full md:w-1/2">
             <div className="flex flex-col gap-[10px] items-center w-full">
               <p className="font-semibold text-base leading-6 tracking-0 text-black text-center">
                 Einzelsitzung
@@ -159,7 +161,7 @@ export default function Home() {
           </div>
 
           {/* 10-Card Package */}
-          <div className="bg-[rgba(67,124,109,0.05)] border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full">
+          <div className="bg-[rgba(67,124,109,0.05)] border border-[#437c6d] flex flex-col gap-10 p-6 rounded-lg w-full md:w-1/2">
             <div className="flex flex-col gap-[10px] items-center w-full">
               <p className="font-semibold text-base leading-6 tracking-0 text-black text-center">
                 10er Karte
@@ -209,62 +211,9 @@ export default function Home() {
           <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an. Diese Dienstleistungen ersetzen keine medizinische oder therapeutische Behandlung. Bei gesundheitlichen Anliegen konsultieren Sie bitte qualifizierte Fachkräfte.
         </p>
       </section>
+      </div>
 
-      {/* Footer */}
-      <footer className="bg-[rgba(67,124,109,0.1)] flex flex-col gap-12 px-6 pt-6 pb-6 w-full">
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
-            Navigation
-          </h3>
-          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
-            <a href="/">Start</a>
-            <a href="/ueber-mich">Über mich</a>
-            <a href="/leistungen">Leistungen</a>
-            <a href="/kontakt">Kontakt</a>
-            <a href="/aura-soma">AURA-SOMA®</a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
-            Leistungen
-          </h3>
-          <div className="flex flex-col gap-1 font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
-            <p>Körperliches Wohlbefinden</p>
-            <p>Schmerzmanagement</p>
-            <p>Geistige Entspannung</p>
-            <p>Emotionsarbeit</p>
-            <p>Persönliches Wachstum</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-6 items-center w-full">
-          <h3 className="font-semibold text-2xl leading-[28.8px] tracking-0 text-[#437c6d] text-center">
-            Kontakt
-          </h3>
-          <div className="flex flex-col gap-1 text-base leading-6 tracking-0 text-center w-full">
-            <p className="font-normal text-[#64748b]">
-              Terminvereinbarung nach Absprache
-            </p>
-            <p className="font-bold text-[#437c6d]">
-              Jetzt Termin vereinbaren →
-            </p>
-          </div>
-        </div>
-        <div className="h-[1px] bg-gray-300 w-full" />
-        <div className="flex flex-col gap-4 w-full">
-          <p className="font-normal text-base leading-6 tracking-0 text-[#64748b] text-center w-full">
-            © 2025 Kinesiologie Sattler.<br />
-            Alle Rechte vorbehalten.
-          </p>
-          <div className="flex font-semibold text-base leading-6 tracking-0 text-[#437c6d] text-center justify-between w-full">
-            <a href="/impressum" className="flex-1">Impressum</a>
-            <a href="/datenschutz" className="flex-1">Datenschutz</a>
-          </div>
-        </div>
-        <p className="font-normal text-sm leading-5 tracking-[0.07px] text-[#64748b] text-justify w-full">
-          <span className="font-bold">Rechtlicher Hinweis:</span> Carolin Sattler ist keine medizinische Fachkraft und ersetzt keine ärztliche oder heilpraktische Behandlung. Bei gesundheitlichen Anliegen wird dringend geraten, sich an qualifizierte Schulmediziner, Heilpraktiker oder Psychotherapeuten zu wenden. Es ist wichtig, bestehende Behandlungen nicht zu unterbrechen.<br /><br />
-          Carolin Sattler bietet psychologische Beratung außerhalb der Heilkunde an und unterliegt nicht der Psychotherapiegesetzgebung. Beachten Sie, dass diese Dienstleistungen keine medizinische oder therapeutische Behandlung ersetzen und in Absprache mit Fachleuten durchgeführt werden sollten.
-        </p>
-      </footer>
+      <Footer />
     </main>
   );
 }
