@@ -109,8 +109,8 @@ export function MuskelTestTabs() {
   return (
     <div className="flex flex-col gap-4 w-full lg:flex-row lg:gap-8 lg:px-12">
       {/* Tabs */}
-      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:py-0 lg:w-auto">
-        <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-2 lg:items-start">
+      <div ref={tabsRef} className="bg-white overflow-x-auto pl-6 py-[10px] w-full scrollbar-hide lg:overflow-visible lg:pl-0 lg:py-0 lg:w-auto lg:h-full">
+        <div className="flex gap-5 items-center whitespace-nowrap lg:flex-col lg:gap-2 lg:items-start lg:justify-between lg:h-full">
           {tabsData.map((tab, index) => (
             <button
               key={tab.id}
@@ -134,8 +134,8 @@ export function MuskelTestTabs() {
         </div>
       </div>
       {/* Content */}
-      <div className="px-6 lg:px-0 lg:flex-1">
-        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px] lg:p-8">
+      <div className="px-6 lg:px-0 lg:flex-1 lg:max-w-[800px]">
+        <div className="bg-[rgba(67,124,109,0.05)] flex flex-col justify-center gap-12 p-4 rounded-lg overflow-hidden min-h-[280px] lg:p-8 lg:h-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
