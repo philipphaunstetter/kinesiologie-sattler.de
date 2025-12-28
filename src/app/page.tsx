@@ -34,7 +34,7 @@ export default function Home() {
         <h2 className="font-semibold text-[28px] leading-[32px] tracking-0 text-[#437c6d] text-center w-full lg:text-[36px] lg:leading-[44px]">
           Die Säulen der visionären Kinesiologie nach Kinninger®
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-[1200px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-[1200px] justify-items-center">
           <FeatureCard
             icon={<img src="/icons/scale.svg" alt="" className="w-10 h-10" />}
             title="Körperliches Wohlbefinden"
